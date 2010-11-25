@@ -1,4 +1,4 @@
-(ns anansi.app.static.routes
+(ns anansi.static-routes
   (:use [anansi handlers config]
         clojure.contrib.logging
         ring.util.response))
