@@ -18,7 +18,7 @@
 (defn text 
   ([key] (text *language* key))
   ([*language* key]
-     (or (-?> (:text *config*) *language* key)
+     (or (-> (:text *config*) *language* key)
          key)))
 
 (defn date-time
