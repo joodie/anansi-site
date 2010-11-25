@@ -11,45 +11,6 @@
      #^{:doc "The current output timezone, as used by the timestamp->... functions"}
      (DateTimeZone/forID "Europe/Amsterdam"))
 
-(def core-translation 
-     {:nl 
-      {:title "Titel"
-       :intro "Intro"
-       :body  "Inhoud"
-       :blog-posts "Blog posts"
-       :no-required-field "Veld niet ingevuld"
-       :confirm-delete "Bevestig verwijderen"
-       :cancel "Annuleer"
-       :delete "Verwijder"
-       :january "januari"
-       :february "februari"
-       :march "maart"
-       :april "april"
-       :may "mei"
-       :june "juni"
-       :july "juli"
-       :august "augustus"
-       :september "september"
-       :october "oktober"
-       :november "november"
-       :december "december"
-       :short-january "jan"
-       :short-february "feb"
-       :short-march "mar"
-       :short-april "apr"
-       :short-may "mei"
-       :short-june "jun"
-       :short-july "jul"
-       :short-august "aug"
-       :short-september "sep"
-       :short-october "okt"
-       :short-november "nov"
-       :short-december "dec"
-       :posted "Geplaatst"
-       :status "Status"
-       :info "Info"
-       :read-on "Lees verder »"}})
-
 (def months [:none :january :february :march :april :may :june :july :august :september :october :november :december])
 
 (def short-months [:none :short-january :short-february :short-march :short-april :short-may :short-june :short-july :short-august :short-september :short-october :short-november :short-december])

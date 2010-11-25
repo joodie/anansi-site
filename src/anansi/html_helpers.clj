@@ -2,7 +2,6 @@
   (:use [hiccup core page-helpers]
         ring.util.codec
         anansi.validation.predicates
-        clj-sql.core
         [clojure.contrib.string :only [split join split-lines]]))
 
 (defn add-class 
