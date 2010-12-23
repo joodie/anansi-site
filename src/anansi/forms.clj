@@ -38,6 +38,7 @@
 (alias-from form form-to)
 
 (def text-area (with-class form/text-area "text-area"))
+(def html-area (with-class form/text-area "html-area"))
 (def hidden-field (with-class form/hidden-field "hidden-field"))
 
 (defn check-box
@@ -59,6 +60,7 @@
 (wrap! text-field insert-params)
 (wrap! password-field insert-params)
 (wrap! text-area insert-params)
+(wrap! html-area insert-params)
 (wrap! hidden-field insert-params)
 (wrap! check-box insert-params)
 
