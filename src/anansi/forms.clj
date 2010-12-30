@@ -37,8 +37,13 @@
 
 (alias-from form form-to)
 
-(def text-area (with-class form/text-area "text-area"))
-(def html-area (with-class form/text-area "html-area"))
+(defn text-area
+  [name value]
+  (add-class (form/text-area name (string->html value)) "text-area"))
+(defn html-area
+  [name value]
+  (add-class (form/text-area name (string->html value)) "html-area"))
+
 (def hidden-field (with-class form/hidden-field "hidden-field"))
 
 (defn check-box
