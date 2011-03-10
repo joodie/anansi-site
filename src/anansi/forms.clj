@@ -39,10 +39,10 @@
 
 (defn text-area
   [name value]
-  (add-class (form/text-area name (string->html value)) "text-area"))
+  (add-class (form/text-area name value) "text-area"))
 (defn html-area
   [name value]
-  (add-class (form/text-area name (string->html value)) "html-area"))
+  (add-class (form/text-area name value) "html-area"))
 
 (def hidden-field (with-class form/hidden-field "hidden-field"))
 

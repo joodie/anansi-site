@@ -1,7 +1,7 @@
-(defproject anansi-site "0.0.2"
+(defproject anansi-site "0.0.3"
   :description "basic compojure/ring based web framework"
   :dependencies [[anansi-handlers "1.0.0-SNAPSHOT"]
-                 [hiccup "0.2.6"]
+                 [hiccup "0.3.2"]
                  [swank-clojure "1.2.1"]
                  [clj-time "0.1.0-SNAPSHOT"]
                  [ring/ring-core "0.3.1"]
