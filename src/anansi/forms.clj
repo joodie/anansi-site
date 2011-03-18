@@ -102,8 +102,8 @@
 
 (defn labeled
   ([f key value label]
-     (if-let [err (*errors* key)]
-       [:div {:class (str "error " (name key))} [:label (text label) [:strong.error-msg (apply str err)] (f key value)]]
+     (if-let [errs (get (:errors (meta *params*)) key)]
+       [:div {:class (apply str "error " errs)} [:label (text label) [:strong.error-msg (map text (sort errs))] (f key value)]]
        [:div {:class (name key)} [:label (text label) (f key value)]]))
   ([f key value]
      (labeled f key value key))
