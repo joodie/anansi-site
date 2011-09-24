@@ -8,4 +8,4 @@
                  [ring/ring-jetty-adapter "0.3.1"]
                  [ring/ring-devel "0.3.1"]
                  [clj-stacktrace "0.2.0"]
-                 [zeekat-utils "0.1.0"]]
+                 [zeekat-utils "0.1.0"]])
