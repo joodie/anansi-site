@@ -1,4 +1,4 @@
-(defproject anansi-site "0.0.5"
+(defproject anansi-site "0.0.6"
   :description "basic compojure/ring based web framework"
   :dependencies [[anansi-handlers "1.0.1"]
                  [hiccup "0.3.2"]
