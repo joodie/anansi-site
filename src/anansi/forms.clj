@@ -51,16 +51,18 @@
   (form/check-box name (= value (*params* name)) value))
 
 (defn make-drop-down
-     [options]
-     (fn
-       dd
-       ([name value]
-          (form/drop-down name (map #(if (keyword? %)
-                                      [(text %) %]
-                                      %)
-                                    options) value))
-       ([name]
-          (dd name (name *params*)))))
+  [options]
+  (fn
+    dd
+    ([n value]
+       (form/drop-down n (map #(if (keyword? %)
+                                 [(text %) (name %)]
+                                 %)
+                              options) (str value)))
+    ([n]
+       (dd n (if (keyword? (n *params*))
+               (name (n *params*))
+               (str (n *params*)))))))
 
 (wrap! text-field insert-params)
 (wrap! password-field insert-params)
