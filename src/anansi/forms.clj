@@ -58,7 +58,7 @@
           (form/drop-down name (map #(if (keyword? %)
                                       [(text %) %]
                                       %)
-                                    options) (keyword (str value))))
+                                    options) value))
        ([name]
           (dd name (name *params*)))))
 
